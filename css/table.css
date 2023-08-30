@@ -1,0 +1,71 @@
+/* div - table */
+.table-container {
+    overflow-y: scroll;
+    max-height: 490px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+/* table */
+#shop {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* thead */
+thead {
+    position: sticky;
+    top: 0;
+    background-color: #25287b;
+    z-index: 2;
+}
+
+thead th+th {
+    border-left: 1px solid #000;
+}
+
+thead th {
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    height: 50px;
+}
+
+/* tfoot */
+tfoot {
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
+}
+
+tfoot th {
+    height: 49px;
+    background-color: #25287b;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+
+tfoot th+th {
+    border-left: 1px solid #000;
+}
+
+/* tbody */
+tbody th {
+    height: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #2f50e3;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+tbody th:first-child {
+    border-left: none;
+}
+
+.container tbody th:last-child {
+    border-right: none;
+    background-color: #ccc;
+}

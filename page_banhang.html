@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Bán Hàng</title>
+    <link rel="stylesheet" href="css/style_page_banhang.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bán hàng</h1>
+        <select name="mucgia" id="mucgia">
+            <option value="all">Tất cả</option>
+            <option value="200">&lt;200</option>
+            <option value="500">&lt;500</option>
+            <option value="1000">&lt;1000</option>
+            <option value="2000">&lt;2000</option>
+        </select>
+        <div class="table-container">
+            <table id="shop">
+                <thead>
+                    <tr class="row">
+                        <th><input type="checkbox"></th>
+                        <th>Hàng hóa</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody id="body_tb">
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="4">TỔNG</th>
+                        <th colspan="1"><span id="tongtien">0</span></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div id="home">
+        <a href="./index.html">
+            <img src="./images/home.png" alt="">
+        </a>
+    </div>
+    <script src="js/page_banhang.js"></script>
+</body>
+
+</html>

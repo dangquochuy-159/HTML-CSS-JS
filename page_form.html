@@ -1,0 +1,85 @@
+<div class="container">
+    <h1>Đăng kí thành viên</h1>
+    <form action="./confirm_signup.php" method="POST" class="form">
+        <div class="form-group">
+            <label for="" class="label-gr">
+                <span>Mã sinh viên</span>
+                <input id="masv" type="text" name="maSV">
+            </label>
+            <label for="" class="label-gr">
+                <span>Họ tên</span>
+                <input id="hoten" type="text" name="ten">
+            </label>
+            <label for="" class="label-gr">
+                <span>Email</span>
+                <input id="email" type="email" name="email">
+            </label>
+
+        </div>
+        <div class="form-group">
+            <label class="label-gr gender">
+                <span>Giới tính</span>
+                <div id="ip_gender">
+                    <label for="nam">
+                        <input class="gioitinh" id="nam" name="gioiTinh" value="nam" type="radio">Nam
+                    </label>
+                    <label for="nu">
+                        <input class="gioitinh" id="nu" name="gioiTinh" value="nữ" type="radio">Nữ
+                    </label>
+                </div>
+
+            </label>
+            <label class="label-gr like">
+                <span>Sở thích</span>
+                <div id="ip_like">
+                    <input checked hidden class="" id="arrSoThich" name="arrSoThich" value="" type="checkbox">
+                    <label for="docsach">
+                        <input class="sothich" id="docsach" name="soThich" value="Đọc sách" type="checkbox">Đọc sách
+                    </label>
+                    <label for="dulich">
+                        <input class="sothich" id="dulich" name="soThich" value="Du lịch" type="checkbox">Du lịch
+                    </label>
+                    <label for="amthuc">
+                        <input class="sothich" id="amthuc" name="soThich" value="Ẩm thực" type="checkbox">Ẩm thực
+                    </label>
+                    <label for="amnhac">
+                        <input class="sothich" id="amnhac" name="soThich" value="Âm nhạc" type="checkbox">Âm nhạc
+                    </label>
+                    <label for="khac">
+                        <input class="sothich" id="khac" name="soThich" value="Khác" type="checkbox">Khác
+                    </label>
+                </div>
+            </label>
+
+        </div>
+        <div class="form-group">
+            <label for="" class="label-gr">
+                <span>Quốc Tịch</span>
+                <select name="quocTich" id="quoctich">
+                    <option value="">Chọn quốc tịch</option>
+                    <option value="Việt Nam">Việt Nam</option>
+                    <option value="Hàn Quốc">Hàn Quốc</option>
+                    <option value="Nhật Bản">Nhật Bản</option>
+                </select>
+            </label>
+            <label for="" class="label-gr">
+                <span>Ghi chú</span>
+                <textarea name="ghiChu" id="ghichu" cols="30" rows="5"></textarea>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <button class="btn-submit" name="btn-add" type="submit" id="btn-add">Đăng Ký</button>
+            <button class="btn-submit" name="btn-update" type="submit" id="btn-update">Sửa Thông Tin</button>
+            <button class="btn-submit" name="btn-delete" type="submit" id="btn-delete">Xóa</button>
+        </div>
+        <input hidden type="text" name="btn-submit" id="btn-submit">
+    </form>
+    <div id="loi"></div>
+</div>
+
+<div id="home">
+    <a href="./index.html">
+        <img src="./images/home.png" alt="">
+    </a>
+</div>

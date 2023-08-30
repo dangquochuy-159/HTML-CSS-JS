@@ -1,0 +1,204 @@
+@import url("./table.css");
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.list {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 100vh;
+    width: 600px;
+    overflow-y: scroll;
+    max-height: 490px;
+    /* background-color: red; */
+}
+
+.table-container.list {
+    min-height: 100vh;
+    min-width: 40%;
+}
+
+.list th:first-child,
+.list th:last-child {
+    min-width: 100px;
+}
+
+.list th:nth-child(2) {
+    min-width: 300px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    margin: auto;
+    border: 1px solid #000;
+    overflow-y: auto;
+}
+
+h1 {
+    margin-top: 55px;
+    text-transform: uppercase;
+    color: rgb(47, 25, 158);
+    text-align: center;
+    font-weight: 800;
+}
+
+form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-group:nth-child(4) {
+    justify-content: center !important;
+}
+
+.label-gr {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.label-gr.like {
+    flex: 4 !important;
+}
+
+#ip_gender,
+#ip_like {
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#ip_like label {
+    display: flex;
+    justify-content: center;
+}
+
+.label-gr div {
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    /* gap: 20px; */
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.label-gr:not(.gender) div label {
+    flex: 1;
+}
+
+.label-gr div label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+input,
+select {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    outline: none;
+    padding-left: 10px;
+}
+
+textarea {
+    border: 1px solid #000;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+span {
+    font-weight: 700;
+}
+
+button.btn-submit {
+    width: 150px;
+    height: 42px;
+    align-self: center;
+    background-color: rgb(47, 25, 158);
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 800;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(85, 59, 215);
+}
+
+input,
+select,
+textarea {
+    color: red;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+select {
+    cursor: pointer;
+}
+
+#loi {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    font-style: italic;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+
+#loi.hidden {
+    display: none;
+}
+
+input.error,
+div.error,
+select.error,
+textarea.error {
+    background-color: yellow;
+}
+
+#home {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    right: 20px;
+}
+
+#home a img {
+    width: 100%;
+}
